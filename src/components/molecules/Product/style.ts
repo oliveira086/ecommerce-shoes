@@ -12,7 +12,10 @@ export const Container = styled.div`
 export const ImageContainer = styled.div`
   width: 100%;
   height: 30vh;
-  background-color: coral;
+  background-image: url('http://images.tcdn.com.br/img/img_prod/465211/bota_gonew_fenix_2_0_4_1_20201209105019.jpg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 export const TextContainer = styled.div`
@@ -22,16 +25,17 @@ export const TextContainer = styled.div`
   height: 14vh;
   padding-left: 5px;
   text {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    text-align: center;
-    line-height: 12px;
+    text-align: left;
+    line-height: 18px;
   }
   span {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     line-height: 36px;
   }
   align-items: flex-start;
+  justify-content: flex-start;
 `;

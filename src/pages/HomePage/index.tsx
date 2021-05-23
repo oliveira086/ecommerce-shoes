@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 import { Container, MiddleContainer, FilterContainer,
   ProductsContainer, TitleProductsContainer } from './style'
 
 import Header from '../../components/molecules/Header';
 import Product from '../../components/molecules/Product';
+import Footer from '../../components/molecules/Footer';
+
+import ShoesServices from '../../services/getAllShoes';
+import { product } from '../../services/getAllShoes/getAllShoesInterface';
 
 const HomePage: React.FC = () => {
-  const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  const [data, setData] = useState<product[]>([]);
+
+  useEffect(() => {
+    const SHOES_SERVICE = new ShoesServices();
+    SHOES_SERVICE.getAllServices().then(res => {
+      setData(res.data.Products)
+   })
+  }, []);
+
   return (
     <Container>
       <Header></Header>
@@ -16,11 +29,13 @@ const HomePage: React.FC = () => {
           <TitleProductsContainer>
             <span>CALÇADOS MASCULINOS</span>
           </TitleProductsContainer>
-          {lista.map(x => {
-            return <Product></Product>
+          {data.map(x => {
+            console.log(x.Product)
+            return <Product name={x.Product.name} productImage={x.Product.ProductImage} price={x.Product.price} ></Product>
           })}
         </ProductsContainer>
       </MiddleContainer>
+      <Footer></Footer>
     </Container>
   );
 };

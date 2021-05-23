@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: 200vh;
   background-color: #fff;
   justify-content: space-between;
 `;
@@ -12,8 +12,7 @@ export const Container = styled.section`
 export const MiddleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  height: 80vh;
+  width: 100%;
   justify-content: space-around;
 `;
 
@@ -32,7 +31,6 @@ export const ProductsContainer = styled.div`
   height: 100%;
   padding: 5px;
   justify-content: space-around;
-  overflow-y: scroll;
   
 `;
 
