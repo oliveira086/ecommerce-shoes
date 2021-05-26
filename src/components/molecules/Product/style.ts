@@ -8,6 +8,7 @@ export const Container = styled.div`
     border: 1px solid black;
   };
   margin-top: 20px;
+  cursor: pointer;
 `;
 
 export const ImageContainer = styled.div<ProductProps>`

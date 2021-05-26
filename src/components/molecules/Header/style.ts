@@ -18,6 +18,7 @@ export const ImageContainer = styled.div`
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 `;
 
 export const SearchContainer = styled.div`
@@ -51,6 +52,7 @@ export const ButtonSearch = styled.div`
   color: #fff;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;
 
 
@@ -61,6 +63,7 @@ export const BagAmountContainer = styled.div`
   color: #000;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const LoginContainer = styled.div`
@@ -70,4 +73,5 @@ export const LoginContainer = styled.div`
   color: #000;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 `;
