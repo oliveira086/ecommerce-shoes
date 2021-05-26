@@ -1,4 +1,6 @@
-import styled from 'styled-components'; 
+import styled from 'styled-components';
+
+import { ProductInterface } from './index';
 
 export const Container = styled.section`
   display: flex;
@@ -29,10 +31,10 @@ export const ContainerPriceProduct = styled.div`
   padding-top: 3vh;
 `;
 
-export const ImageProduct = styled.div`
+export const ImageProduct = styled.div<ProductInterface>` 
   width: 40vw;
   height: 40vw;
-  background-image: url('http://images.tcdn.com.br/img/img_prod/465211/bota_gonew_fenix_2_0_4_1_20201209105019.jpg');
+  background-image: url(${props => props?.image});
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -103,4 +105,22 @@ export const LineDivision = styled.div`
   width: 90vw;
   height: 2px;
   background-color: #000;
+`;
+
+export const ContainerDetailsProduct = styled.section`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5vw;
+`;
+
+export const ImageDetailsProduct = styled.div<ProductInterface>`
+  width: 30vw;
+  height: 30vw;
+  background-image: url(${props => props?.image});
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 `;

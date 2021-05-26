@@ -8,7 +8,7 @@ export const Container = styled.section`
   flex-direction: column;
   width: 100%;
   height: 35vh;
-  background-color: #999;
+  margin-top: 5vw;
 `;
 
 export const ContainerTitle = styled.div`
@@ -19,7 +19,6 @@ export const ContainerTitle = styled.div`
   div{
     display: flex;
     align-items: center;
-    border-top: 1px #000 solid;
     width: 25%;
     height: 100%;
     padding-left: 3vw;

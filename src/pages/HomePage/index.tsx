@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+
 import { Container, MiddleContainer, FilterContainer,
   ProductsContainer, TitleProductsContainer } from './style'
 
@@ -7,8 +8,8 @@ import Header from '../../components/molecules/Header';
 import Product from '../../components/molecules/Product';
 import Footer from '../../components/molecules/Footer';
 
-import ShoesServices from '../../services/getAllShoes';
-import { product } from '../../services/getAllShoes/getAllShoesInterface';
+import ShoesServices from '../../services/getAllProducts';
+import { product } from '../../services/getAllProducts/getAllProductsInterface';
 
 const HomePage: React.FC = () => {
   const [data, setData] = useState<product[]>([]);
@@ -30,8 +31,8 @@ const HomePage: React.FC = () => {
             <span>CALÇADOS MASCULINOS</span>
           </TitleProductsContainer>
           {data.map(x => {
-            console.log(x.Product)
-            return <Product name={x.Product.name} productImage={x.Product.ProductImage} price={x.Product.price} ></Product>
+            return <Product name={ x.Product.name } productImage={ x.Product.ProductImage }
+            price={ x.Product.price } id={ x.Product.id }></Product>
           })}
         </ProductsContainer>
       </MiddleContainer>

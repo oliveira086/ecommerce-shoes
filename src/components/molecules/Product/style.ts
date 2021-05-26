@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ProductProps } from './index';
 
 export const Container = styled.div`
   width: 15vw;
@@ -9,10 +10,10 @@ export const Container = styled.div`
   margin-top: 20px;
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.div<ProductProps>`
   width: 100%;
   height: 30vh;
-  background-image: url('http://images.tcdn.com.br/img/img_prod/465211/bota_gonew_fenix_2_0_4_1_20201209105019.jpg');
+  background-image: url(${props => props.image});
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
