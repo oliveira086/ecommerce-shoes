@@ -7,6 +7,7 @@ export const Container = styled.section`
   height: 200vh;
   background-color: #fff;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const MiddleContainer = styled.div`
@@ -14,13 +15,6 @@ export const MiddleContainer = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-`;
-
-export const FilterContainer = styled.div`
-  width: 20vw;
-  height: 100%;
-  background-color: #898989;
-  border-radius: 10px;
 `;
 
 export const ProductsContainer = styled.div`
@@ -31,6 +25,7 @@ export const ProductsContainer = styled.div`
   height: 100%;
   padding: 5px;
   justify-content: space-around;
+  align-items: flex-start;
   
 `;
 

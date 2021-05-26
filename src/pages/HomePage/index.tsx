@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
 
-import { Container, MiddleContainer, FilterContainer,
+import { Container, MiddleContainer,
   ProductsContainer, TitleProductsContainer } from './style'
 
 import Header from '../../components/molecules/Header';
 import Product from '../../components/molecules/Product';
+import LineDivision from '../../components/atoms/LineDivison';
 import Footer from '../../components/molecules/Footer';
 
 import ShoesServices from '../../services/getAllProducts';
@@ -25,7 +26,6 @@ const HomePage: React.FC = () => {
     <Container>
       <Header></Header>
       <MiddleContainer>
-        <FilterContainer></FilterContainer>
         <ProductsContainer>
           <TitleProductsContainer>
             <span>CALÇADOS MASCULINOS</span>
@@ -36,6 +36,7 @@ const HomePage: React.FC = () => {
           })}
         </ProductsContainer>
       </MiddleContainer>
+      <LineDivision></LineDivision>
       <Footer></Footer>
     </Container>
   );

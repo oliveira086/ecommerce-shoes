@@ -101,12 +101,6 @@ export const ButtonBuy = styled.button`
   text-align: center;
 `;
 
-export const LineDivision = styled.div`
-  width: 90vw;
-  height: 2px;
-  background-color: #000;
-`;
-
 export const ContainerDetailsProduct = styled.section`
   display: flex;
   flex-direction: row;

@@ -2,7 +2,7 @@ import React, { useEffect, useState, ImgHTMLAttributes } from 'react';
 
 import { Container, MiddleContainer, ContainerImageProduct,
   ContainerPriceProduct, ImageProduct, CategoryProduct, SimpleDetail,
-  NameProduct, PriceAndPayment, AmountAndBuy, ButtonBuy, LineDivision,
+  NameProduct, PriceAndPayment, AmountAndBuy, ButtonBuy,
   ContainerDetailsProduct, 
   ImageDetailsProduct } from './style';
 
@@ -10,6 +10,7 @@ import getOneProductService from '../../services/getOneProduct'
 import { product } from '../../services/getOneProduct/getOneProductInterface'
 
 import Header from '../../components/molecules/Header';
+import LineDivision from '../../components/atoms/LineDivison';
 import Footer from '../../components/molecules/Footer';
 import DetailProduct from '../../components/molecules/DetailProduct';
 

@@ -9,9 +9,12 @@ import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
 
 
 const Header: React.FC = () => {
+  const redirectToHome = () => {
+    window.location.href = '/'
+  }
   return (
     <Container>
-      <ImageContainer ></ImageContainer>
+      <ImageContainer onClick={() => redirectToHome()}></ImageContainer>
       <SearchContainer>
         <InputSearch placeholder="O que você está buscando?"></InputSearch>
         <ButtonSearch>
